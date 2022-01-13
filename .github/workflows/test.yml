@@ -11,6 +11,10 @@ jobs:
         with:
           node-version: 14.x
       - run: yarn install
+      - run: brew tap wix/brew
+      - run: brew install --HEAD applesimutils
+      - run: npm install -g detox-cli
+      - run: npm install --global expo-cli
       - run: yarn downloadExpoApp
       - run: yarn ios
       - run: yarn test
