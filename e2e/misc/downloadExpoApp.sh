@@ -3,7 +3,7 @@
 set -eo pipefail
 
 # query expo.io to find most recent ipaUrl
-IPA_URL=$(curl -sS https://expo.io/--/api/v2/versions | python -c 'import sys, json; print json.load(sys.stdin)["iosUrl"]')
+IPA_URL=$(curl -sS https://expo.io/--/api/v2/versions | python -c 'import sys, json; print(json.load(sys.stdin)["iosUrl"])')
 # Skipping android apk dl for now
 # APK_URL=$(curl -sS https://expo.io/--/api/v2/versions | python -c 'import sys, json; print json.load(sys.stdin)["androidUrl"]')
 
