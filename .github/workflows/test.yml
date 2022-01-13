@@ -13,7 +13,5 @@ jobs:
       - run: yarn install
       - run: brew tap wix/brew
       - run: brew install applesimutils
-      - run: npm install -g detox-cli
-      - run: npm install --global expo-cli
-      - run: yarn downloadExpoApp
-      - run: yarn ios
+      - run: yarn global add detox-cli
+      - run: yarn eject
