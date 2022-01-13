@@ -16,5 +16,4 @@ jobs:
       - run: npm install -g detox-cli
       - run: npm install --global expo-cli
       - run: yarn downloadExpoApp
-      - run: yarn ios
       - run: yarn test
