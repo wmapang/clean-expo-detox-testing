@@ -1,8 +1,6 @@
 name: Expo Go
 on:
-  push:
-    branches:
-      - preview
+  workflow_dispatch:
 jobs:
   test:
     name: test
